@@ -36,26 +36,27 @@
 
     .bottom-box {
       min-height: 220px;
-      position: relative; /* Needed for absolute positioning inside */
+      position: relative;
     }
 
-    /* Steam button inside bottom box */
-    .steam-button {
+    /* Steam link styled like a black box */
+    .steam-box {
       position: absolute;
       top: 20px;
       left: 20px;
-      background-color: white;
-      color: #b00010;
+      background-color: #0b0b0b;
+      color: white;
       text-decoration: none;
-      padding: 10px 20px;
-      border-radius: 6px;
+      padding: 12px 26px;
+      border-radius: 8px;
       font-size: 16px;
-      transition: 0.3s;
+      border: 1px solid #222;
+      transition: 0.25s;
     }
 
-    .steam-button:hover {
-      background-color: #b00010;
-      color: white;
+    .steam-box:hover {
+      background-color: #171717;
+      transform: translateY(-2px);
     }
 
     h1 {
@@ -73,7 +74,7 @@
     </div>
 
     <div class="box bottom-box">
-      <a class="steam-button"
+      <a class="steam-box"
          href="https://steamcommunity.com/id/Laxrsilv/"
          target="_blank">
         Steam
