@@ -24,11 +24,18 @@
 
     .box {
       background-color: #b00010;
-      width: 600px;          /* BIGGER WIDTH */
-      min-height: 220px;     /* BIGGER HEIGHT */
+      width: 600px;
       padding: 50px;
       color: white;
       border-radius: 10px;
+    }
+
+    .top-box {
+      padding: 20px 50px;   /* smaller height */
+    }
+
+    .bottom-box {
+      min-height: 220px;    /* keeps bottom taller */
     }
 
     h1 {
@@ -62,11 +69,11 @@
 
   <div class="container">
     
-    <div class="box">
+    <div class="box top-box">
       <h1>Raphael's Website</h1>
     </div>
 
-    <div class="box">
+    <div class="box bottom-box">
       <p>tel aviv</p>
       <button onclick="alert('israel')">Click me</button>
     </div>
