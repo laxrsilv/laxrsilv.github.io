@@ -8,42 +8,45 @@
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      height: 100vh;
       margin: 0;
-
-      color: #b00010;
-      text-align: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
       font-family: "Comic Sans MS", cursive;
     }
 
+    .container {
+      margin-left: 8%;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .box {
+      background-color: #b00010;
+      padding: 40px;
+      width: 400px;
+      color: white;
+      border-radius: 10px;
+    }
+
     h1 {
-      font-size: 60px;
-      letter-spacing: 3px;
-      text-shadow: 0 0 20px #b00010;
-      margin-bottom: 10px;
+      margin: 0;
+      font-size: 40px;
     }
 
     p {
-      color: white;
-      font-size: 18px;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
     }
 
     button {
-      background-color: #b00010;
+      background-color: black;
       color: white;
       border: none;
-      padding: 12px 30px;
-      font-size: 16px;
-      border-radius: 8px;
+      padding: 10px 25px;
+      border-radius: 6px;
       cursor: pointer;
-      transition: 0.3s ease;
+      transition: 0.3s;
     }
 
     button:hover {
@@ -53,10 +56,19 @@
   </style>
 </head>
 <body>
-  <h1>Raphael's Website</h1>
-  <p>tel aviv</p>
-  <button onclick="alert('big yahu')">
-    Click me
-  </button>
+
+  <div class="container">
+    
+    <div class="box">
+      <h1>Raphael's Website</h1>
+    </div>
+
+    <div class="box">
+      <p>tel aviv</p>
+      <button onclick="alert('israel')">Click me</button>
+    </div>
+
+  </div>
+
 </body>
 </html>
