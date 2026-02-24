@@ -15,25 +15,6 @@
       font-family: "Comic Sans MS", cursive;
     }
 
-    /* Steam button fixed top-left */
-    .steam-button {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      background-color: #b00010;
-      color: white;
-      text-decoration: none;
-      padding: 12px 25px;
-      border-radius: 6px;
-      font-size: 16px;
-      transition: 0.3s;
-    }
-
-    .steam-button:hover {
-      background-color: white;
-      color: #b00010;
-    }
-
     .container {
       margin-left: 5%;
       display: flex;
@@ -55,6 +36,26 @@
 
     .bottom-box {
       min-height: 220px;
+      position: relative; /* Needed for absolute positioning inside */
+    }
+
+    /* Steam button inside bottom box */
+    .steam-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: white;
+      color: #b00010;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .steam-button:hover {
+      background-color: #b00010;
+      color: white;
     }
 
     h1 {
@@ -65,13 +66,6 @@
 </head>
 <body>
 
-  <!-- Steam link top-left -->
-  <a class="steam-button"
-     href="https://steamcommunity.com/id/Laxrsilv/"
-     target="_blank">
-    Steam
-  </a>
-
   <div class="container">
     
     <div class="box top-box">
@@ -79,6 +73,11 @@
     </div>
 
     <div class="box bottom-box">
+      <a class="steam-button"
+         href="https://steamcommunity.com/id/Laxrsilv/"
+         target="_blank">
+        Steam
+      </a>
     </div>
 
   </div>
