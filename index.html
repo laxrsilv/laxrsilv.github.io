@@ -6,64 +6,63 @@
 
         /* ===== PAGE BACKGROUND SETTINGS ===== */
         body {
-            margin: 0; /* removes default browser spacing */
-            height: 100vh; /* full screen height */
-            background: url("background.jpg") no-repeat center center fixed; /* background image */
-            background-size: cover; /* makes image cover entire screen */
-            font-family: Arial, sans-serif; /* text font */
+            margin: 0;
+            height: 100vh;
+            background: url("background.jpg") no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
         }
 
         /* ===== CONTAINER POSITION & SIZE ===== */
         .container {
             position: absolute;
-            top: 40px;   /* distance from top of screen */
-            left: 40px;  /* distance from left of screen */
+            top: 40px;
+            left: 40px;
             display: flex;
-            flex-direction: column; /* stacks boxes vertically */
-            gap: 20px; /* space between the boxes */
-            width: 350px; /* WIDTH OF BOTH BOXES (change this to make wider/narrower) */
+            flex-direction: column;
+            gap: 20px;
+            width: 350px;
         }
 
         /* ===== GENERAL BOX STYLE ===== */
         .box {
-            background: rgba(0, 0, 0, 0.4); /* glass transparent background */
-            backdrop-filter: blur(8px); /* blur effect */
-            border: 2px solid rgba(255, 0, 0, 0.6); /* border color */
-            border-radius: 15px; /* rounded corners */
-            padding: 20px; /* inside spacing */
-            color: white; /* text color */
-            text-align: left; /* text alignment */
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(8px);
+            border: 2px solid rgba(255, 0, 0, 0.6);
+            border-radius: 15px;
+            padding: 20px;
+            color: white;
+            text-align: left;
         }
 
         /* ===== TITLE BOX STYLE ===== */
         .title-box {
-            font-size: 32px; /* title text size */
-            font-weight: bold; /* bold text */
+            font-size: 32px;
+            font-weight: bold;
         }
 
-        /* ===== CONTENT BOX SIZE ===== */
+        /* ===== CONTENT BOX STYLE ===== */
         .content-box {
             font-size: 18px;
-            min-height: 100px; /* grows automatically if needed */
-            display: flex; 
-            flex-direction: column; /* stack buttons vertically */
-            gap: 12px; /* space between buttons */
+            display: flex;
+            flex-direction: column;
+            gap: 8px; /* SMALL gap between buttons */
         }
 
-        /* ===== STEAM BUTTON STYLE ===== */
+        /* ===== BUTTON STYLE ===== */
         .steam-btn {
-            text-decoration: none; /* removes underline */
-            background: rgba(255, 0, 0, 0.7); /* button color */
-            padding: 8px 15px; /* button size */
-            border-radius: 8px; /* rounded button */
-            color: white; /* text color */
+            text-decoration: none;
+            background: rgba(255, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 8px;
+            color: white;
             font-weight: bold;
-            transition: 0.3s; /* smooth hover animation */
+            text-align: center;
+            transition: 0.3s;
         }
 
-        /* ===== BUTTON HOVER EFFECT ===== */
         .steam-btn:hover {
-            background: red; /* changes color when mouse hovers */
+            background: red;
         }
 
     </style>
@@ -82,8 +81,6 @@
                class="steam-btn">
                Steam
             </a>
-
-            <br><br>
 
             <a href="https://www.instagram.com/laxrsilv_116/" 
                target="_blank" 
