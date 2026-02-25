@@ -13,25 +13,25 @@
             font-family: Arial, sans-serif;
         }
 
-        /* ===== GENERAL BOX STYLE ===== */
-        .box {
-            background: rgba(0, 0, 0, 0.6); /* slightly darker for stronger contrast */
-            backdrop-filter: blur(8px);
-        
-            border: 2px solid red; /* solid red border */
-            box-shadow: 0 0 15px rgba(255, 0, 0, 0.6); /* red glow effect */
-        
-            border-radius: 4px; /* sharper Evangelion edges */
-            padding: 20px;
-            color: white;
-            text-align: left;
+        /* ===== CONTAINER POSITION & SIZE ===== */
+        .container {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 350px;
         }
 
         /* ===== GENERAL BOX STYLE ===== */
         .box {
-            background: rgba(0, 0, 0, 0.4);
+            background: rgba(0, 0, 0, 0.6);
             backdrop-filter: blur(8px);
-            border: 2px solid rgba(255, 0, 0, 0.6);
+
+            border: 2px solid red;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+
             border-radius: 4px;
             padding: 20px;
             color: white;
@@ -49,7 +49,7 @@
             font-size: 18px;
             display: flex;
             flex-direction: column;
-            gap: 8px; /* SMALL gap between buttons */
+            gap: 8px;
         }
 
         /* ===== BUTTON STYLE ===== */
@@ -57,7 +57,7 @@
             text-decoration: none;
             background: rgba(255, 0, 0, 0.7);
             padding: 10px;
-            border-radius: 8px;
+            border-radius: 4px;
             color: white;
             font-weight: bold;
             text-align: center;
@@ -66,6 +66,7 @@
 
         .steam-btn:hover {
             background: red;
+            color: black;
         }
 
     </style>
