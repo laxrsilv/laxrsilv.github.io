@@ -13,15 +13,18 @@
             font-family: Arial, sans-serif;
         }
 
-        /* ===== CONTAINER POSITION & SIZE ===== */
-        .container {
-            position: absolute;
-            top: 40px;
-            left: 40px;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            width: 350px;
+        /* ===== GENERAL BOX STYLE ===== */
+        .box {
+            background: rgba(0, 0, 0, 0.6); /* slightly darker for stronger contrast */
+            backdrop-filter: blur(8px);
+        
+            border: 2px solid red; /* solid red border */
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.6); /* red glow effect */
+        
+            border-radius: 4px; /* sharper Evangelion edges */
+            padding: 20px;
+            color: white;
+            text-align: left;
         }
 
         /* ===== GENERAL BOX STYLE ===== */
@@ -29,7 +32,7 @@
             background: rgba(0, 0, 0, 0.4);
             backdrop-filter: blur(8px);
             border: 2px solid rgba(255, 0, 0, 0.6);
-            border-radius: 15px;
+            border-radius: 4px;
             padding: 20px;
             color: white;
             text-align: left;
