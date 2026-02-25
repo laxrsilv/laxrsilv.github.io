@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Israel</title>
+    <title>Laxrsilv's Website</title>
     <style>
         body {
             margin: 0;
             height: 100vh;
             background: url("background.jpg") no-repeat center center fixed;
             background-size: cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             font-family: Arial, sans-serif;
         }
 
         .container {
+            position: absolute;
+            top: 40px;
+            left: 40px;
             display: flex;
             flex-direction: column;
             gap: 20px;
-            width: 500px;
+            width: 600px;
         }
 
         .box {
-            background: rgba(0, 0, 0, 0.4); /* transparent glass effect */
+            background: rgba(0, 0, 0, 0.4);
             backdrop-filter: blur(8px);
             border: 2px solid rgba(255, 0, 0, 0.6);
             border-radius: 15px;
             padding: 20px;
             color: white;
-            text-align: center;
+            text-align: left;
         }
 
         .title-box {
@@ -38,14 +38,11 @@
 
         .content-box {
             font-size: 18px;
+            height: 150px; /* makes bottom box longer */
             position: relative;
-            padding-top: 50px;
         }
 
         .steam-btn {
-            position: absolute;
-            top: 10px;
-            left: 10px;
             text-decoration: none;
             background: rgba(255, 0, 0, 0.7);
             padding: 8px 15px;
@@ -64,7 +61,7 @@
 
     <div class="container">
         <div class="box title-box">
-            Israel
+            Laxrsilv's Website
         </div>
 
         <div class="box content-box">
@@ -73,8 +70,6 @@
                class="steam-btn">
                Steam
             </a>
-
-            Welcome to my page 😎
         </div>
     </div>
 
